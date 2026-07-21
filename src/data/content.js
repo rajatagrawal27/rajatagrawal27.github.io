@@ -23,6 +23,7 @@ export const profile = {
     'Frontend developer with 7 years of experience across fintech and identity security — from reusable component libraries to enterprise SaaS dashboards.',
   email: 'agrawalrajat27@gmail.com',
   location: 'Indore, India',
+  photo: '/profile.jpg', // save your photo as public/profile.jpg — falls back to initials if missing
   cvUrl: '#', // PLACEHOLDER: add public/resume.pdf and change this to '/resume.pdf'
 }
 

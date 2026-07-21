@@ -132,6 +132,10 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-
   font-size: 56px;
   font-weight: 800;
 }
+.hero__avatar--photo {
+  object-fit: cover;
+  box-shadow: var(--shadow-card);
+}
 
 /* ============ About ============ */
 .about__grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; }
