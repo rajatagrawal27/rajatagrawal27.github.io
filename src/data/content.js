@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────
 // EDIT THIS FILE to update the whole site.
-// Remaining PLACEHOLDER items: LinkedIn URL and resume PDF link.
+// Remaining PLACEHOLDER item: resume PDF link (cvUrl).
 // ─────────────────────────────────────────────────────────────
 
 export const sections = [
@@ -118,6 +118,6 @@ export const contact = {
 
 export const socials = [
   { label: 'GitHub', url: 'https://github.com/rajatagrawal27' },
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/' }, // PLACEHOLDER: your profile URL
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/rajat-agrawal-957255187' },
   { label: 'Email', url: 'mailto:agrawalrajat27@gmail.com' },
 ]
