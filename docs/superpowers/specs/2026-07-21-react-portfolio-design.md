@@ -71,11 +71,16 @@ only step needed to personalize the whole site.
 
 ## Deployment
 
-- Git repo (initialized locally, pushed to Rajat's GitHub repo — URL to be provided)
+- GitHub: username `rajatagrawal27`; public repo **`rajatagrawal27.github.io`**
+  (user site → served at the root URL `https://rajatagrawal27.github.io/`)
+- Repo does not exist yet: Rajat creates it empty at github.com/new, then we push
+  (`gh` CLI is not installed)
 - `.github/workflows/deploy.yml`: on push to `main` → npm ci → vite build → upload
   `dist/` → deploy to GitHub Pages (official `actions/deploy-pages` flow)
-- `vite.config.js` sets `base` to the repo name so assets resolve under
-  `https://<username>.github.io/<repo>/`
+- `vite.config.js` keeps default `base: '/'` (root user site, no subpath)
+- Known real details to seed `content.js`: name Rajat Agrawal (he/him), based in
+  Indore, GitHub github.com/rajatagrawal27, email agrawalrajat27@gmail.com
+  (public on his GitHub profile); everything else placeholder
 
 ## Error handling / quality
 
