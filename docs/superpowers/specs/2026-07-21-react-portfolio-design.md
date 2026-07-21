@@ -85,7 +85,8 @@ only step needed to personalize the whole site.
 ## Error handling / quality
 
 - `npm run build` must pass with zero errors before any deploy
-- ESLint (Vite default config) passes
+- Vitest + React Testing Library tests pass (`npm test`) — run in CI before deploy
+  (stronger gate than the ESLint default config, which we skip for speed)
 - Manual responsive check at 375px / 768px / 1280px via dev server
 - All external links `rel="noopener noreferrer"`
 
