@@ -19,6 +19,9 @@ Everything that changed on the site, newest first.
 
 **New features (live):**
 
+- **Favicon** — browser-tab icon made from the profile photo: circular face
+  crop with a teal ring (`public/favicon.png` + `apple-touch-icon.png`)
+
 - **Full name in the navbar** — logo now reads "Rajat Agrawal." instead of "Rajat."
 - **Scroll mini-profile** — after scrolling past the hero, the sticky navbar
   shows a compact profile: round photo, name, and "Frontend Developer (React.js)"
