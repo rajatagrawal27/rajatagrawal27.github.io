@@ -6,6 +6,19 @@ Built with **Vite + React** (functional components only), styled with plain CSS
 design tokens, tested with **Vitest + React Testing Library**, and deployed
 **automatically to GitHub Pages** on every push to `main` — hosting is 100% free.
 
+## ✨ Features
+
+- **Light & dark mode** — ☾/☀ toggle in the navbar; the choice is remembered
+  between visits (localStorage), with smooth color transitions
+- **Scroll mini-profile** — after scrolling past the hero, the sticky navbar
+  shows photo + name + role
+- **Active-section navigation** — pill navbar highlights the section in view,
+  smooth-scrolls on click
+- **Reveal-on-scroll animations** — sections fade in; respects
+  `prefers-reduced-motion`
+- **Labeled project covers** — each project card has a branded gradient cover
+- Fully responsive (desktop / tablet / mobile), tested at 1280 / 768 / 375 px
+
 ---
 
 ## 📁 Project structure
@@ -14,12 +27,14 @@ design tokens, tested with **Vitest + React Testing Library**, and deployed
 portfolio/
 ├── index.html                  # HTML shell (title, meta tags)
 ├── vite.config.js              # Vite + Vitest config
-├── package.json                # scripts + dependencies
+├── public/
+│   └── profile.jpg             # profile photo (hero + navbar mini-profile)
 ├── .github/workflows/
 │   └── deploy.yml              # CI: test → build → deploy to GitHub Pages
 ├── docs/
-│   ├── SETUP-JOURNEY.md        # 📖 how this site was created & deployed (full story)
-│   ├── CUSTOM-DOMAIN.md        # 📖 future: buy a domain & connect it (step by step)
+│   ├── SETUP-JOURNEY.md        # 📖 how this site was created & deployed
+│   ├── CHANGELOG.md            # 📖 what changed, by date
+│   ├── CUSTOM-DOMAIN.md        # 📖 future: buy a domain & connect it
 │   └── superpowers/            # original design spec & implementation plan
 └── src/
     ├── main.jsx                # React entry point
@@ -28,22 +43,19 @@ portfolio/
     ├── data/
     │   └── content.js          # ⭐ ALL site text lives here — edit this file
     ├── components/             # independent, reusable, props-only components
-    │   ├── Button.jsx            (never import data — receive everything via props)
-    │   ├── SectionHeading.jsx
-    │   ├── SkillBadge.jsx
-    │   ├── NavPill.jsx
-    │   ├── ProjectCard.jsx
-    │   ├── TimelineItem.jsx
-    │   ├── SocialLinks.jsx
+    │   ├── Button.jsx, SectionHeading.jsx, SkillBadge.jsx,
+    │   ├── NavPill.jsx, ProjectCard.jsx, TimelineItem.jsx,
+    │   ├── SocialLinks.jsx, ThemeToggle.jsx
     │   └── __tests__/          # component tests
     ├── containers/             # section containers: import data, compose components
-    │   ├── Navbar.jsx, Hero.jsx, About.jsx, Skills.jsx,
-    │   ├── Projects.jsx, Experience.jsx, Contact.jsx, Footer.jsx
+    │   └── Navbar, Hero, About, Skills, Projects, Experience, Contact, Footer
     ├── hooks/
     │   ├── useScrollReveal.js  # fade-in sections on scroll
-    │   └── useActiveSection.js # highlights current section in navbar
+    │   ├── useActiveSection.js # highlights current section in navbar
+    │   ├── useScrolled.js      # detects scroll past the hero (mini-profile)
+    │   └── useTheme.js         # dark/light mode with localStorage persistence
     ├── styles/
-    │   └── global.css          # design tokens (colors, radius, shadows) + all styles
+    │   └── global.css          # design tokens (light + dark) + all styles
     └── test/
         └── setup.js            # test environment setup
 ```
@@ -82,17 +94,17 @@ npm run preview
 
 > [`src/data/content.js`](src/data/content.js)
 
-Search for `PLACEHOLDER` in that file to find what still needs your real details:
+Common edits:
 
-- [ ] Bio paragraphs (About section)
-- [ ] Fact numbers (years of experience, projects shipped…)
-- [ ] The 4 project cards (titles, descriptions, tech, demo/code links)
-- [ ] Work experience (companies, periods, bullet points)
-- [ ] LinkedIn profile URL
-- [ ] Resume PDF link (`cvUrl`) — put a `resume.pdf` in the `public/` folder and set `cvUrl: '/resume.pdf'`
-
-To change colors/spacing/shadows: edit the design tokens at the top of
-[`src/styles/global.css`](src/styles/global.css) (e.g. `--accent: #0e7c72`).
+- **Projects** — the `projects` array: title, description, tech badges, links,
+  plus `coverLabel` / `coverNote` (the text on the gradient cover) and
+  `gradient` (the cover colors)
+- **Profile photo** — replace `public/profile.jpg` (used in hero + navbar)
+- **Resume** — still PLACEHOLDER: add `public/resume.pdf` and set
+  `cvUrl: '/resume.pdf'` to make the "Download CV" button work
+- **Colors / theme** — design tokens at the top of
+  [`src/styles/global.css`](src/styles/global.css): `:root` for light mode,
+  `:root[data-theme="dark"]` for dark mode
 
 ---
 
@@ -117,7 +129,7 @@ it to https://rajatagrawal27.github.io/. Watch progress in the repo's
 | Site shows a blank page | Repo **Settings → Pages → Source** must be **"GitHub Actions"** (not "Deploy from a branch") — see [docs/SETUP-JOURNEY.md](docs/SETUP-JOURNEY.md) |
 | Push rejected / auth error | Your SSH key must be added at github.com/settings/ssh — see [docs/SETUP-JOURNEY.md](docs/SETUP-JOURNEY.md#5-ssh-key) |
 | Deploy failed in Actions tab | Open the failed run → read which step is red. Usually a failing test — run `npm test` locally first |
-| Old content showing | Hard-refresh the browser: `Ctrl+Shift+R` |
+| Old content/photo showing | Hard-refresh the browser: `Ctrl+Shift+R` |
 
 ---
 
@@ -125,16 +137,19 @@ it to https://rajatagrawal27.github.io/. Watch progress in the repo's
 
 - **[docs/SETUP-JOURNEY.md](docs/SETUP-JOURNEY.md)** — the complete record of how this
   site was created, configured, and deployed (repo naming rules, SSH setup,
-  Pages configuration, gotchas we hit and their fixes).
+  Pages configuration, gotchas we hit and their fixes)
+- **[docs/CHANGELOG.md](docs/CHANGELOG.md)** — everything that changed, by date
 - **[docs/CUSTOM-DOMAIN.md](docs/CUSTOM-DOMAIN.md)** — future plan: buying a custom
-  domain (e.g. `rajatagrawal.dev`) and connecting it to this site, step by step.
+  domain (e.g. `rajatagrawal.dev`) and connecting it to this site, step by step
 
 ## 💡 Future improvement ideas
 
-- [ ] Replace all `PLACEHOLDER` content with real details
-- [ ] Add `public/resume.pdf` and link it from the hero button
+- [ ] Add `public/resume.pdf` (matching the site's frontend-developer story)
+  and link it from the hero "Download CV" button
 - [ ] Add a favicon (`public/favicon.svg` + `<link rel="icon">` in `index.html`)
 - [ ] Add Open Graph meta tags in `index.html` (nice preview when sharing the link)
 - [ ] Buy a custom domain → follow [docs/CUSTOM-DOMAIN.md](docs/CUSTOM-DOMAIN.md)
 - [ ] Real project screenshots instead of gradient covers (`public/projects/*.png`)
-- [ ] Optional: dark mode toggle, blog section, analytics
+- [ ] Retry the "photo cutout" hero with a photo taken against a plain background
+  (see [docs/CHANGELOG.md](docs/CHANGELOG.md) for why the first attempt was reverted)
+- [ ] Optional: blog section, analytics

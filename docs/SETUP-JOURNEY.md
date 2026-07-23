@@ -117,6 +117,22 @@ git add -A && git commit -m "update content" && git push
 
 ## 11. What's next (when ready)
 
-- Swap `PLACEHOLDER` content in `src/data/content.js` for real details
-- Add `public/resume.pdf` and set `cvUrl` in content.js
+- ~~Swap `PLACEHOLDER` content in `src/data/content.js` for real details~~ ✅ done 2026-07-21
+- Add `public/resume.pdf` and set `cvUrl` in content.js — **still open**
 - Custom domain — full guide: [CUSTOM-DOMAIN.md](CUSTOM-DOMAIN.md)
+
+## 12. Updates after launch
+
+See [CHANGELOG.md](CHANGELOG.md) for the full dated list. Highlights:
+
+- **2026-07-21 (evening):** real resume content, profile photo in the hero,
+  LinkedIn link. Rajat did his first fully manual deploy
+  (`git add -A && git commit && git push`).
+- **2026-07-23:** full name in navbar, scroll mini-profile (photo + name + role
+  in the sticky header), dark/light mode toggle with localStorage persistence,
+  labeled project covers.
+- **2026-07-23 (reverted):** a photo-cutout hero experiment — background
+  removal kept clashing with a speaker/cable touching the hair in the source
+  photo. Reverted cleanly via `git reset --hard origin/main` (the commits were
+  never pushed, so the live site was never affected). Retry needs a photo with
+  a plain background.
