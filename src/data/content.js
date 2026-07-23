@@ -15,7 +15,7 @@ export const sections = [
 export const profile = {
   name: 'Rajat Agrawal',
   initials: 'RA',
-  logo: { text: 'Rajat', dot: '.' },
+  logo: { text: 'Rajat Agrawal', dot: '.' },
   role: 'Frontend Developer (React.js)',
   heroGreeting: "Hi, I'm Rajat.",
   heroTitle: { before: 'I build ', highlight: 'component-driven', after: ' web apps in React.' },
@@ -57,6 +57,8 @@ export const skillGroups = [
 export const projects = [
   {
     title: 'Mesh Identity Risk (Axiad)',
+    coverLabel: 'Mesh',
+    coverNote: 'Identity Risk SaaS',
     description:
       'Multi-tenant SaaS platform for enterprise identity risk management — dashboards for identity correlation, cryptographic asset tracking, and risk assessment.',
     tech: ['React.js', 'TypeScript', 'GraphQL'],
@@ -65,6 +67,8 @@ export const projects = [
   },
   {
     title: 'Loan Origination System',
+    coverLabel: 'LOS',
+    coverNote: 'Fintech Platform',
     description:
       'End-to-end loan automation for financial institutions — application intake, document verification, underwriting, and approval workflow screens.',
     tech: ['React.js', 'TypeScript', 'Material UI'],
@@ -73,6 +77,8 @@ export const projects = [
   },
   {
     title: 'Sacunxt — ServiceNow Plugin',
+    coverLabel: 'Sacunxt',
+    coverNote: 'ServiceNow Plug-in',
     description:
       'Third-party ServiceNow plugin developed in JavaScript, extending platform functionality for external integrations.',
     tech: ['JavaScript', 'ServiceNow'],
@@ -81,6 +87,8 @@ export const projects = [
   },
   {
     title: 'This Portfolio',
+    coverLabel: 'RA.',
+    coverNote: 'React + Vite + CI',
     description:
       'The site you are looking at — a component-driven React portfolio with CI-tested builds, deployed automatically to GitHub Pages.',
     tech: ['React', 'Vite', 'GitHub Actions'],

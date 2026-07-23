@@ -1,9 +1,12 @@
 import SkillBadge from './SkillBadge'
 
-export default function ProjectCard({ title, description, tech, gradient, links }) {
+export default function ProjectCard({ title, description, tech, gradient, links, coverLabel, coverNote }) {
   return (
     <article className="project-card">
-      <div className="project-card__cover" style={{ background: gradient }} aria-hidden="true" />
+      <div className="project-card__cover" style={{ background: gradient }} aria-hidden="true">
+        {coverLabel && <span className="project-card__cover-label">{coverLabel}</span>}
+        {coverNote && <span className="project-card__cover-note">{coverNote}</span>}
+      </div>
       <h3 className="project-card__title">{title}</h3>
       <p className="project-card__desc">{description}</p>
       <div className="badges">
