@@ -99,9 +99,12 @@ export const projects = [
 
 export const experience = [
   {
-    role: 'Frontend Developer (React.js)',
-    company: 'Axiad — Mesh Identity Risk platform · team of 12',
+    company: 'InfoBeans Technologies Ltd',
     period: 'Jul 2025 — Present',
+    roles: [
+      { title: 'Senior Software Engineer', period: 'Jul 2025 — Present' },
+    ],
+    projects: ['Mesh Identity Risk (Axiad) · team of 12'],
     points: [
       'Build independent, reusable React + TypeScript components and containers for identity correlation, cryptographic asset tracking, and risk assessment dashboards on a multi-tenant SaaS platform, consuming REST and GraphQL APIs.',
       'Shipped the end-to-end agent identity ingestion UI flow — 12 integration tests, zero critical defects post-deployment — along with a new incidents dashboard page.',
@@ -109,9 +112,14 @@ export const experience = [
     ],
   },
   {
-    role: 'Frontend Developer (React.js)',
-    company: 'Loan Origination System (fintech) · team of 7',
-    period: 'Aug 2019 — Jun 2025',
+    company: 'Sigma Infosolutions Ltd',
+    period: 'Aug 2019 — Jul 2025',
+    roles: [
+      { title: 'Senior Software Engineer', period: 'Nov 2024 — Jul 2025' },
+      { title: 'Software Engineer', period: 'Sep 2021 — Nov 2024' },
+      { title: 'Associate Software Engineer', period: 'Aug 2019 — Aug 2021' },
+    ],
+    projects: ['Loan Origination System (LOS) · fintech · team of 7'],
     points: [
       'Architected an independent React + TypeScript component library covering application intake, document verification, underwriting, and approval workflow screens, styled with Material UI and Bootstrap.',
       'Implemented client-side routing and containerized frontend modules with React Router, letting business teams adjust approval workflows without backend code changes.',

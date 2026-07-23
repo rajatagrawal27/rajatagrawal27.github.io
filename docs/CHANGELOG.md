@@ -4,6 +4,15 @@ Everything that changed on the site, newest first.
 
 ## 2026-07-23
 
+**Experience section restructured by company:**
+
+- Timeline entries are now companies (not roles): **InfoBeans Technologies Ltd**
+  (Jul 2025 — Present) and **Sigma Infosolutions Ltd** (Aug 2019 — Jul 2025)
+- Career progression shown inside each company: Associate Software Engineer →
+  Software Engineer → Senior Software Engineer at Sigma; Senior Software
+  Engineer at InfoBeans
+- Projects listed inside each company as pills (Mesh Identity Risk / LOS)
+
 **New features (live):**
 
 - **Full name in the navbar** — logo now reads "Rajat Agrawal." instead of "Rajat."

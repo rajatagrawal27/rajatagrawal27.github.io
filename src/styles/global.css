@@ -276,7 +276,18 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-
 }
 .timeline-item__period { font-size: 13px; font-weight: 700; color: var(--accent); }
 .timeline-item__role { font-size: 18px; font-weight: 700; margin: 4px 0 2px; }
-.timeline-item__company { color: var(--muted); font-size: 15px; margin-bottom: 10px; }
+.timeline-item__roles { display: grid; gap: 6px; margin: 12px 0 14px; max-width: 480px; }
+.timeline-item__roles li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font-size: 14.5px; }
+.timeline-item__roles strong { color: var(--ink); font-weight: 700; }
+.timeline-item__roles span { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.timeline-item__projects { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.timeline-item__projects-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 .timeline-item__points li { color: var(--muted); font-size: 15px; padding-left: 18px; position: relative; margin-bottom: 6px; }
 .timeline-item__points li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
 
