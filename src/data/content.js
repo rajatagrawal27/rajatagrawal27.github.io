@@ -101,29 +101,49 @@ export const experience = [
   {
     company: 'InfoBeans Technologies Ltd',
     period: 'Jul 2025 — Present',
-    roles: [
-      { title: 'Senior Software Engineer', period: 'Jul 2025 — Present' },
-    ],
     projects: ['Mesh Identity Risk (Axiad) · team of 12'],
-    points: [
-      'Build independent, reusable React + TypeScript components and containers for identity correlation, cryptographic asset tracking, and risk assessment dashboards on a multi-tenant SaaS platform, consuming REST and GraphQL APIs.',
-      'Shipped the end-to-end agent identity ingestion UI flow — 12 integration tests, zero critical defects post-deployment — along with a new incidents dashboard page.',
-      'Led frontend architecture alignment across 8 microservice-backed UI modules ahead of a major release, and resolved a critical production data-integrity bug.',
+    roles: [
+      {
+        title: 'Senior Software Engineer',
+        period: 'Jul 2025 — Present',
+        points: [
+          'Build independent, reusable React + TypeScript components and containers for identity correlation, cryptographic asset tracking, and risk assessment dashboards on a multi-tenant SaaS platform, consuming REST and GraphQL APIs.',
+          'Shipped the end-to-end agent identity ingestion UI flow — 12 integration tests, zero critical defects post-deployment — along with a new incidents dashboard page.',
+          'Led frontend architecture alignment across 8 microservice-backed UI modules ahead of a major release, and resolved a critical production data-integrity bug.',
+        ],
+      },
     ],
   },
   {
     company: 'Sigma Infosolutions Ltd',
     period: 'Aug 2019 — Jul 2025',
-    roles: [
-      { title: 'Senior Software Engineer', period: 'Nov 2024 — Jul 2025' },
-      { title: 'Software Engineer', period: 'Sep 2021 — Nov 2024' },
-      { title: 'Associate Software Engineer', period: 'Aug 2019 — Aug 2021' },
-    ],
     projects: ['Loan Origination System (LOS) · fintech · team of 7'],
-    points: [
-      'Architected an independent React + TypeScript component library covering application intake, document verification, underwriting, and approval workflow screens, styled with Material UI and Bootstrap.',
-      'Implemented client-side routing and containerized frontend modules with React Router, letting business teams adjust approval workflows without backend code changes.',
-      'Integrated graph-based data views for fraud detection and cross-application risk correlation, optimizing rendering performance for high-volume loan processing.',
+    roles: [
+      {
+        title: 'Associate Software Engineer',
+        period: 'Aug 2019 — Aug 2021',
+        points: [
+          'Built responsive UI screens for application intake and document verification in React.js, HTML5, CSS, and Bootstrap.',
+          'Wrote Jest unit tests for shared components and fixed UI bugs across the LOS platform.',
+        ],
+      },
+      {
+        title: 'Software Engineer',
+        period: 'Sep 2021 — Nov 2024',
+        points: [
+          'Developed reusable React + TypeScript components for underwriting and approval workflow screens, styled with Material UI.',
+          'Implemented client-side routing and containerized frontend modules with React Router, letting business teams adjust approval workflows without backend code changes.',
+          'Integrated graph-based data views for fraud detection and cross-application risk correlation into the frontend.',
+        ],
+      },
+      {
+        title: 'Senior Software Engineer',
+        period: 'Nov 2024 — Jul 2025',
+        points: [
+          'Architected the independent React + TypeScript component library powering the entire LOS frontend, and set the testing standards with Jest.',
+          'Optimized rendering performance for high-volume loan processing and guided the 7-engineer team on component patterns and reviews.',
+        ],
+      },
     ],
   },
 ]
