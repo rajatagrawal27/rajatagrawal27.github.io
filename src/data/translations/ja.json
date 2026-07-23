@@ -1,0 +1,246 @@
+{
+  "sections": [
+    {
+      "id": "home",
+      "label": "ホーム"
+    },
+    {
+      "id": "about",
+      "label": "自己紹介"
+    },
+    {
+      "id": "skills",
+      "label": "スキル"
+    },
+    {
+      "id": "projects",
+      "label": "プロジェクト"
+    },
+    {
+      "id": "experience",
+      "label": "経歴"
+    },
+    {
+      "id": "contact",
+      "label": "連絡先"
+    }
+  ],
+  "ui": {
+    "viewProjects": "プロジェクトを見る",
+    "downloadCv": "履歴書をダウンロード",
+    "sayHello": "メールする",
+    "liveDemo": "ライブデモ →",
+    "sourceCode": "ソースコード →",
+    "projectsLabel": "プロジェクト",
+    "aboutEyebrow": "自己紹介",
+    "aboutTitle": "私について",
+    "skillsEyebrow": "スキル",
+    "skillsTitle": "扱っている技術",
+    "projectsEyebrow": "プロジェクト",
+    "projectsTitle": "これまでの制作物",
+    "experienceEyebrow": "経歴",
+    "experienceTitle": "職務経歴",
+    "footerPrefix": "設計・開発："
+  },
+  "profile": {
+    "name": "Rajat Agrawal",
+    "initials": "RA",
+    "logo": {
+      "text": "Rajat Agrawal",
+      "dot": "."
+    },
+    "role": "Frontend Developer (React.js)",
+    "heroGreeting": "こんにちは、Rajat です。",
+    "heroTitle": {
+      "before": "React で ",
+      "highlight": "component-driven",
+      "after": " な Web アプリを作っています。"
+    },
+    "heroSubtitle": "フィンテックと identity security の分野で 7 年の経験を持つ frontend developer — 再利用可能な component library からエンタープライズ SaaS dashboard まで。",
+    "email": "agrawalrajat27@gmail.com",
+    "location": "インド・インドール",
+    "photo": "/profile.jpg",
+    "cvUrl": "#"
+  },
+  "about": {
+    "paragraphs": [
+      "インドのインドールを拠点とする frontend developer です。React.js・JavaScript・TypeScript でレスポンシブかつ component-driven な Web アプリを 7 年間開発してきました。独立した再利用可能な component library と client-side routing の設計を得意とし、Jest による unit test で UI の品質を支えています。",
+      "フィンテックと identity security の分野でエンタープライズ向けプラットフォームをリリースしてきました。直近では、アイデンティティリスク管理の multi-tenant SaaS プラットフォーム「Axiad Mesh」を担当。LNCT Indore でコンピュータサイエンスの学士号（2019）を取得し、frontend アーキテクチャのリード、工数見積もり、クライアントとの直接協働を楽しんでいます。"
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "年の業界経験"
+      },
+      {
+        "value": "2",
+        "label": "エンタープライズ基盤：フィンテック & identity security"
+      },
+      {
+        "value": "0",
+        "label": "直近の大型リリースでのクリティカル不具合"
+      }
+    ]
+  },
+  "skillGroups": [
+    {
+      "title": "Frontend",
+      "skills": [
+        "React.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5 & CSS",
+        "Material UI",
+        "Bootstrap",
+        "React Router"
+      ]
+    },
+    {
+      "title": "Testing & APIs",
+      "skills": [
+        "Jest",
+        "Unit Testing",
+        "REST APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "title": "Tools & Practices",
+      "skills": [
+        "Git & Bitbucket",
+        "Jira",
+        "Docker",
+        "Go",
+        "Claude AI",
+        "Team Leadership"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Mesh Identity Risk (Axiad)",
+      "coverLabel": "Mesh",
+      "coverNote": "Identity Risk SaaS",
+      "description": "エンタープライズのアイデンティティリスク管理向け multi-tenant SaaS プラットフォーム — アイデンティティ相関・暗号資産トラッキング・リスク評価の dashboard。",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "GraphQL"
+      ],
+      "gradient": "linear-gradient(135deg, #d9f0ee, #9fd8d2)",
+      "links": {}
+    },
+    {
+      "title": "Loan Origination System",
+      "coverLabel": "LOS",
+      "coverNote": "フィンテック基盤",
+      "description": "金融機関向けのエンドツーエンド融資自動化 — 申込受付、書類確認、underwriting、承認 workflow の画面。",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "Material UI"
+      ],
+      "gradient": "linear-gradient(135deg, #e3e9f7, #aebfe8)",
+      "links": {}
+    },
+    {
+      "title": "Sacunxt — ServiceNow プラグイン",
+      "coverLabel": "Sacunxt",
+      "coverNote": "ServiceNow Plug-in",
+      "description": "JavaScript で開発したサードパーティ製 ServiceNow プラグイン。外部連携のためにプラットフォームを拡張します。",
+      "tech": [
+        "JavaScript",
+        "ServiceNow"
+      ],
+      "gradient": "linear-gradient(135deg, #fde8d7, #f6c39a)",
+      "links": {}
+    },
+    {
+      "title": "このポートフォリオ",
+      "coverLabel": "RA.",
+      "coverNote": "React + Vite + CI",
+      "description": "いまご覧いただいているサイトです — component-driven な React ポートフォリオ。CI でテストされ、GitHub Pages に自動デプロイされます。",
+      "tech": [
+        "React",
+        "Vite",
+        "GitHub Actions"
+      ],
+      "gradient": "linear-gradient(135deg, #e8f2e4, #b9d8ac)",
+      "links": {
+        "code": "https://github.com/rajatagrawal27/rajatagrawal27.github.io"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "company": "InfoBeans Technologies Ltd",
+      "period": "2025年7月 — 現在",
+      "projects": [
+        "Mesh Identity Risk (Axiad) · 12名チーム"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "2025年7月 — 現在",
+          "points": [
+            "multi-tenant SaaS プラットフォーム上で、アイデンティティ相関・暗号資産トラッキング・リスク評価 dashboard 向けの独立した再利用可能な React + TypeScript component / container を開発。REST と GraphQL API を利用。",
+            "agent identity ingestion のエンドツーエンド UI フローをリリース — 統合テスト 12 件、デプロイ後のクリティカル不具合ゼロ — 新しい incidents dashboard ページも追加。",
+            "大型リリースに向けて microservice ベースの 8 つの UI モジュールの frontend アーキテクチャ統一をリードし、本番環境のクリティカルなデータ整合性バグを解決。"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Sigma Infosolutions Ltd",
+      "period": "2019年8月 — 2025年7月",
+      "projects": [
+        "Loan Origination System (LOS) · フィンテック · 7名チーム"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "2024年11月 — 2025年7月",
+          "points": [
+            "LOS の frontend 全体を支える独立した React + TypeScript component library を設計し、Jest によるテスト標準を確立。",
+            "大量の融資処理に向けてレンダリング性能を最適化し、7 名のチームを component パターンとコードレビューで指導。"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "period": "2021年9月 — 2024年11月",
+          "points": [
+            "Material UI を用いて underwriting と承認 workflow 画面向けの再利用可能な React + TypeScript component を開発。",
+            "React Router による client-side routing とコンテナ化された frontend モジュールを実装し、業務チームが backend の変更なしで承認 workflow を調整できるように。",
+            "不正検知とアプリケーション横断のリスク相関のためのグラフベースのデータビューを frontend に統合。"
+          ]
+        },
+        {
+          "title": "Associate Software Engineer",
+          "period": "2019年8月 — 2021年8月",
+          "points": [
+            "React.js・HTML5・CSS・Bootstrap で申込受付と書類確認のレスポンシブな UI 画面を構築。",
+            "共有 component の Jest unit test を作成し、LOS プラットフォームの UI バグを修正。"
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "一緒に何かを作りましょう。",
+    "text": "frontend のポジション、面白いプロジェクト、良い会話を歓迎します — フィンテックと identity security が得意分野です。いちばん早い連絡手段はメールです。"
+  },
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rajatagrawal27"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rajat-agrawal-957255187"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:agrawalrajat27@gmail.com"
+    }
+  ]
+}

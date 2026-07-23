@@ -1,0 +1,246 @@
+{
+  "sections": [
+    {
+      "id": "home",
+      "label": "होम"
+    },
+    {
+      "id": "about",
+      "label": "परिचय"
+    },
+    {
+      "id": "skills",
+      "label": "स्किल्स"
+    },
+    {
+      "id": "projects",
+      "label": "प्रोजेक्ट्स"
+    },
+    {
+      "id": "experience",
+      "label": "अनुभव"
+    },
+    {
+      "id": "contact",
+      "label": "संपर्क"
+    }
+  ],
+  "ui": {
+    "viewProjects": "प्रोजेक्ट्स देखें",
+    "downloadCv": "CV डाउनलोड करें",
+    "sayHello": "नमस्ते कहें",
+    "liveDemo": "लाइव डेमो →",
+    "sourceCode": "सोर्स कोड →",
+    "projectsLabel": "प्रोजेक्ट्स",
+    "aboutEyebrow": "परिचय",
+    "aboutTitle": "मेरे बारे में थोड़ा",
+    "skillsEyebrow": "स्किल्स",
+    "skillsTitle": "मैं इनके साथ काम करता हूँ",
+    "projectsEyebrow": "प्रोजेक्ट्स",
+    "projectsTitle": "मैंने ये बनाए हैं",
+    "experienceEyebrow": "अनुभव",
+    "experienceTitle": "मैंने कहाँ काम किया है",
+    "footerPrefix": "डिज़ाइन और निर्माण:"
+  },
+  "profile": {
+    "name": "Rajat Agrawal",
+    "initials": "RA",
+    "logo": {
+      "text": "Rajat Agrawal",
+      "dot": "."
+    },
+    "role": "Frontend Developer (React.js)",
+    "heroGreeting": "नमस्ते, मैं रजत हूँ।",
+    "heroTitle": {
+      "before": "मैं React में ",
+      "highlight": "component-driven",
+      "after": " वेब ऐप्स बनाता हूँ।"
+    },
+    "heroSubtitle": "फ़िनटेक और identity security में 7 साल के अनुभव वाला frontend डेवलपर — reusable component libraries से लेकर enterprise SaaS dashboards तक।",
+    "email": "agrawalrajat27@gmail.com",
+    "location": "इंदौर, भारत",
+    "photo": "/profile.jpg",
+    "cvUrl": "#"
+  },
+  "about": {
+    "paragraphs": [
+      "मैं इंदौर, भारत का frontend डेवलपर हूँ, जिसके पास React.js, JavaScript और TypeScript से responsive, component-driven वेब ऐप्लिकेशन बनाने का 7 साल का अनुभव है। मेरी विशेषज्ञता independent, reusable component libraries की आर्किटेक्चर और client-side routing में है, और मैं अपने UI को Jest unit tests से मज़बूत बनाता हूँ।",
+      "मैंने फ़िनटेक और identity security में enterprise प्लेटफ़ॉर्म शिप किए हैं — हाल ही में Axiad Mesh, identity risk management का एक multi-tenant SaaS प्लेटफ़ॉर्म। मैंने LNCT इंदौर से Computer Science में B.E. (2019) किया है, और मुझे frontend आर्किटेक्चर लीड करना, टाइमलाइन एस्टिमेट करना और क्लाइंट्स के साथ सीधे काम करना पसंद है।"
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "साल का इंडस्ट्री अनुभव"
+      },
+      {
+        "value": "2",
+        "label": "Enterprise प्लेटफ़ॉर्म: फ़िनटेक और identity security"
+      },
+      {
+        "value": "0",
+        "label": "पिछले बड़े लॉन्च में critical defects"
+      }
+    ]
+  },
+  "skillGroups": [
+    {
+      "title": "Frontend",
+      "skills": [
+        "React.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5 & CSS",
+        "Material UI",
+        "Bootstrap",
+        "React Router"
+      ]
+    },
+    {
+      "title": "Testing & APIs",
+      "skills": [
+        "Jest",
+        "Unit Testing",
+        "REST APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "title": "Tools & Practices",
+      "skills": [
+        "Git & Bitbucket",
+        "Jira",
+        "Docker",
+        "Go",
+        "Claude AI",
+        "Team Leadership"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Mesh Identity Risk (Axiad)",
+      "coverLabel": "Mesh",
+      "coverNote": "Identity Risk SaaS",
+      "description": "Enterprise identity risk management के लिए multi-tenant SaaS प्लेटफ़ॉर्म — identity correlation, cryptographic asset tracking और risk assessment के dashboards।",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "GraphQL"
+      ],
+      "gradient": "linear-gradient(135deg, #d9f0ee, #9fd8d2)",
+      "links": {}
+    },
+    {
+      "title": "Loan Origination System",
+      "coverLabel": "LOS",
+      "coverNote": "फ़िनटेक प्लेटफ़ॉर्म",
+      "description": "वित्तीय संस्थानों के लिए end-to-end लोन ऑटोमेशन — application intake, document verification, underwriting और approval workflow स्क्रीनें।",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "Material UI"
+      ],
+      "gradient": "linear-gradient(135deg, #e3e9f7, #aebfe8)",
+      "links": {}
+    },
+    {
+      "title": "Sacunxt — ServiceNow Plugin",
+      "coverLabel": "Sacunxt",
+      "coverNote": "ServiceNow Plug-in",
+      "description": "JavaScript में बनाया गया third-party ServiceNow plugin, जो external integrations के लिए प्लेटफ़ॉर्म की क्षमताएँ बढ़ाता है।",
+      "tech": [
+        "JavaScript",
+        "ServiceNow"
+      ],
+      "gradient": "linear-gradient(135deg, #fde8d7, #f6c39a)",
+      "links": {}
+    },
+    {
+      "title": "यह पोर्टफ़ोलियो",
+      "coverLabel": "RA.",
+      "coverNote": "React + Vite + CI",
+      "description": "यही साइट जो आप देख रहे हैं — component-driven React पोर्टफ़ोलियो, CI-tested builds के साथ, GitHub Pages पर अपने आप deploy होता है।",
+      "tech": [
+        "React",
+        "Vite",
+        "GitHub Actions"
+      ],
+      "gradient": "linear-gradient(135deg, #e8f2e4, #b9d8ac)",
+      "links": {
+        "code": "https://github.com/rajatagrawal27/rajatagrawal27.github.io"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "company": "InfoBeans Technologies Ltd",
+      "period": "जुलाई 2025 — वर्तमान",
+      "projects": [
+        "Mesh Identity Risk (Axiad) · 12 की टीम"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "जुलाई 2025 — वर्तमान",
+          "points": [
+            "Multi-tenant SaaS प्लेटफ़ॉर्म पर identity correlation, cryptographic asset tracking और risk assessment dashboards के लिए independent, reusable React + TypeScript components और containers बनाता हूँ, REST और GraphQL APIs के साथ।",
+            "End-to-end agent identity ingestion UI flow शिप किया — 12 integration tests, deployment के बाद zero critical defects — साथ में नया incidents dashboard पेज।",
+            "बड़ी release से पहले 8 microservice-backed UI modules की frontend आर्किटेक्चर को align किया, और production का एक critical data-integrity बग हल किया।"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Sigma Infosolutions Ltd",
+      "period": "अगस्त 2019 — जुलाई 2025",
+      "projects": [
+        "Loan Origination System (LOS) · फ़िनटेक · 7 की टीम"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "नवंबर 2024 — जुलाई 2025",
+          "points": [
+            "पूरे LOS frontend को चलाने वाली independent React + TypeScript component library की आर्किटेक्चर बनाई, और Jest के साथ testing standards तय किए।",
+            "High-volume लोन processing के लिए rendering performance ऑप्टिमाइज़ की और 7 इंजीनियरों की टीम को component patterns और reviews पर गाइड किया।"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "period": "सितंबर 2021 — नवंबर 2024",
+          "points": [
+            "Underwriting और approval workflow स्क्रीनों के लिए reusable React + TypeScript components बनाए, Material UI के साथ।",
+            "React Router से client-side routing और containerized frontend modules लागू किए, जिससे business टीमें backend बदले बिना approval workflows बदल सकती थीं।",
+            "Fraud detection और cross-application risk correlation के लिए graph-based data views frontend में जोड़े।"
+          ]
+        },
+        {
+          "title": "Associate Software Engineer",
+          "period": "अगस्त 2019 — अगस्त 2021",
+          "points": [
+            "React.js, HTML5, CSS और Bootstrap में application intake और document verification की responsive UI स्क्रीनें बनाईं।",
+            "Shared components के लिए Jest unit tests लिखे और LOS प्लेटफ़ॉर्म के UI बग ठीक किए।"
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "आइए मिलकर कुछ बनाएँ।",
+    "text": "मैं frontend रोल्स, दिलचस्प प्रोजेक्ट्स और अच्छी बातचीत के लिए खुला हूँ — फ़िनटेक और identity security मेरा घरेलू मैदान है। मुझ तक पहुँचने का सबसे तेज़ तरीक़ा ईमेल है।"
+  },
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rajatagrawal27"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rajat-agrawal-957255187"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:agrawalrajat27@gmail.com"
+    }
+  ]
+}

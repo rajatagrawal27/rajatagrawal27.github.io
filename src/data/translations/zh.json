@@ -1,0 +1,246 @@
+{
+  "sections": [
+    {
+      "id": "home",
+      "label": "首页"
+    },
+    {
+      "id": "about",
+      "label": "关于"
+    },
+    {
+      "id": "skills",
+      "label": "技能"
+    },
+    {
+      "id": "projects",
+      "label": "项目"
+    },
+    {
+      "id": "experience",
+      "label": "经历"
+    },
+    {
+      "id": "contact",
+      "label": "联系"
+    }
+  ],
+  "ui": {
+    "viewProjects": "查看项目",
+    "downloadCv": "下载简历",
+    "sayHello": "联系我",
+    "liveDemo": "在线演示 →",
+    "sourceCode": "源代码 →",
+    "projectsLabel": "项目",
+    "aboutEyebrow": "关于",
+    "aboutTitle": "关于我",
+    "skillsEyebrow": "技能",
+    "skillsTitle": "我的技术栈",
+    "projectsEyebrow": "项目",
+    "projectsTitle": "我构建过的项目",
+    "experienceEyebrow": "经历",
+    "experienceTitle": "我的工作经历",
+    "footerPrefix": "设计与开发："
+  },
+  "profile": {
+    "name": "Rajat Agrawal",
+    "initials": "RA",
+    "logo": {
+      "text": "Rajat Agrawal",
+      "dot": "."
+    },
+    "role": "Frontend Developer (React.js)",
+    "heroGreeting": "你好，我是 Rajat。",
+    "heroTitle": {
+      "before": "我用 React 构建 ",
+      "highlight": "component-driven",
+      "after": " 的 Web 应用。"
+    },
+    "heroSubtitle": "拥有 7 年金融科技与 identity security 领域经验的 frontend 开发者 —— 从可复用的 component library 到企业级 SaaS dashboard。",
+    "email": "agrawalrajat27@gmail.com",
+    "location": "印度印多尔",
+    "photo": "/profile.jpg",
+    "cvUrl": "#"
+  },
+  "about": {
+    "paragraphs": [
+      "我是一名来自印度印多尔的 frontend 开发者，拥有 7 年使用 React.js、JavaScript 和 TypeScript 构建响应式、component-driven Web 应用的经验。我擅长设计独立、可复用的 component library 与 client-side routing，并用完善的 Jest unit tests 保障 UI 质量。",
+      "我交付过金融科技与 identity security 领域的企业级平台 —— 最近的是 Axiad Mesh，一个身份风险管理的 multi-tenant SaaS 平台。我拥有 LNCT Indore 计算机科学工程学士学位（2019），喜欢主导 frontend 架构、评估工期，并直接与客户协作。"
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "年行业经验"
+      },
+      {
+        "value": "2",
+        "label": "企业级平台：金融科技与 identity security"
+      },
+      {
+        "value": "0",
+        "label": "上次重大上线的严重缺陷数"
+      }
+    ]
+  },
+  "skillGroups": [
+    {
+      "title": "Frontend",
+      "skills": [
+        "React.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5 & CSS",
+        "Material UI",
+        "Bootstrap",
+        "React Router"
+      ]
+    },
+    {
+      "title": "Testing & APIs",
+      "skills": [
+        "Jest",
+        "Unit Testing",
+        "REST APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "title": "Tools & Practices",
+      "skills": [
+        "Git & Bitbucket",
+        "Jira",
+        "Docker",
+        "Go",
+        "Claude AI",
+        "Team Leadership"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Mesh Identity Risk (Axiad)",
+      "coverLabel": "Mesh",
+      "coverNote": "Identity Risk SaaS",
+      "description": "面向企业身份风险管理的 multi-tenant SaaS 平台 —— 提供身份关联、加密资产追踪与风险评估的 dashboard。",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "GraphQL"
+      ],
+      "gradient": "linear-gradient(135deg, #d9f0ee, #9fd8d2)",
+      "links": {}
+    },
+    {
+      "title": "Loan Origination System",
+      "coverLabel": "LOS",
+      "coverNote": "金融科技平台",
+      "description": "为金融机构打造的端到端贷款自动化系统 —— 覆盖申请录入、材料审核、underwriting 与审批 workflow 界面。",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "Material UI"
+      ],
+      "gradient": "linear-gradient(135deg, #e3e9f7, #aebfe8)",
+      "links": {}
+    },
+    {
+      "title": "Sacunxt — ServiceNow 插件",
+      "coverLabel": "Sacunxt",
+      "coverNote": "ServiceNow Plug-in",
+      "description": "用 JavaScript 开发的第三方 ServiceNow 插件，为外部集成扩展平台能力。",
+      "tech": [
+        "JavaScript",
+        "ServiceNow"
+      ],
+      "gradient": "linear-gradient(135deg, #fde8d7, #f6c39a)",
+      "links": {}
+    },
+    {
+      "title": "本作品集",
+      "coverLabel": "RA.",
+      "coverNote": "React + Vite + CI",
+      "description": "就是你正在浏览的这个网站 —— component-driven 的 React 作品集，构建经 CI 测试，自动部署到 GitHub Pages。",
+      "tech": [
+        "React",
+        "Vite",
+        "GitHub Actions"
+      ],
+      "gradient": "linear-gradient(135deg, #e8f2e4, #b9d8ac)",
+      "links": {
+        "code": "https://github.com/rajatagrawal27/rajatagrawal27.github.io"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "company": "InfoBeans Technologies Ltd",
+      "period": "2025年7月 — 至今",
+      "projects": [
+        "Mesh Identity Risk (Axiad) · 12 人团队"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "2025年7月 — 至今",
+          "points": [
+            "在 multi-tenant SaaS 平台上构建独立、可复用的 React + TypeScript component 与 container，支撑身份关联、加密资产追踪与风险评估 dashboard，对接 REST 与 GraphQL API。",
+            "交付端到端的 agent identity ingestion UI 流程 —— 12 个集成测试、上线后零严重缺陷 —— 并新增 incidents dashboard 页面。",
+            "在重大版本发布前主导 8 个基于 microservice 的 UI 模块的 frontend 架构对齐，并解决了一个生产环境的严重数据完整性 bug。"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Sigma Infosolutions Ltd",
+      "period": "2019年8月 — 2025年7月",
+      "projects": [
+        "Loan Origination System (LOS) · 金融科技 · 7 人团队"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "2024年11月 — 2025年7月",
+          "points": [
+            "设计支撑整个 LOS frontend 的独立 React + TypeScript component library，并用 Jest 确立测试标准。",
+            "针对高并发贷款处理优化渲染性能，并在 component 模式与代码评审上指导 7 人团队。"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "period": "2021年9月 — 2024年11月",
+          "points": [
+            "用 Material UI 开发 underwriting 与审批 workflow 界面的可复用 React + TypeScript component。",
+            "基于 React Router 实现 client-side routing 与容器化 frontend 模块，让业务团队无需改动 backend 即可调整审批 workflow。",
+            "将用于欺诈检测与跨申请风险关联的图数据视图集成进 frontend。"
+          ]
+        },
+        {
+          "title": "Associate Software Engineer",
+          "period": "2019年8月 — 2021年8月",
+          "points": [
+            "用 React.js、HTML5、CSS 和 Bootstrap 构建申请录入与材料审核的响应式 UI 界面。",
+            "为共享 component 编写 Jest unit tests，并修复 LOS 平台的 UI bug。"
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "让我们一起创造点什么。",
+    "text": "我乐于接受 frontend 职位、有趣的项目和愉快的交流 —— 金融科技与 identity security 是我的主场。联系我最快的方式是发邮件。"
+  },
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rajatagrawal27"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rajat-agrawal-957255187"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:agrawalrajat27@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "sections": [
+    {
+      "id": "home",
+      "label": "Accueil"
+    },
+    {
+      "id": "about",
+      "label": "À propos"
+    },
+    {
+      "id": "skills",
+      "label": "Compétences"
+    },
+    {
+      "id": "projects",
+      "label": "Projets"
+    },
+    {
+      "id": "experience",
+      "label": "Expérience"
+    },
+    {
+      "id": "contact",
+      "label": "Contact"
+    }
+  ],
+  "ui": {
+    "viewProjects": "Voir mes projets",
+    "downloadCv": "Télécharger le CV",
+    "sayHello": "Écrivez-moi",
+    "liveDemo": "Démo en ligne →",
+    "sourceCode": "Code source →",
+    "projectsLabel": "Projets",
+    "aboutEyebrow": "À propos",
+    "aboutTitle": "Un peu à propos de moi",
+    "skillsEyebrow": "Compétences",
+    "skillsTitle": "Ce avec quoi je travaille",
+    "projectsEyebrow": "Projets",
+    "projectsTitle": "Ce que j’ai construit",
+    "experienceEyebrow": "Expérience",
+    "experienceTitle": "Où j’ai travaillé",
+    "footerPrefix": "Conçu et développé par"
+  },
+  "profile": {
+    "name": "Rajat Agrawal",
+    "initials": "RA",
+    "logo": {
+      "text": "Rajat Agrawal",
+      "dot": "."
+    },
+    "role": "Frontend Developer (React.js)",
+    "heroGreeting": "Bonjour, je suis Rajat.",
+    "heroTitle": {
+      "before": "Je construis des applications web ",
+      "highlight": "component-driven",
+      "after": " avec React."
+    },
+    "heroSubtitle": "Développeur frontend avec 7 ans d’expérience dans la fintech et l’identity security — des component libraries réutilisables aux dashboards SaaS d’entreprise.",
+    "email": "agrawalrajat27@gmail.com",
+    "location": "Indore, Inde",
+    "photo": "/profile.jpg",
+    "cvUrl": "#"
+  },
+  "about": {
+    "paragraphs": [
+      "Je suis un développeur frontend basé à Indore, en Inde, avec 7 ans d’expérience dans la création d’applications web responsives et component-driven en React.js, JavaScript et TypeScript. Je suis spécialisé dans l’architecture de component libraries indépendantes et réutilisables avec du client-side routing, et je fiabilise mes UI avec des tests unitaires Jest rigoureux.",
+      "J’ai livré des plateformes d’entreprise dans la fintech et l’identity security — récemment Axiad Mesh, une plateforme SaaS multi-tenant de gestion du risque d’identité. Diplômé d’un Bachelor of Engineering en informatique (LNCT Indore, 2019), j’aime piloter l’architecture frontend, estimer les délais et travailler directement avec les clients."
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "Années d’expérience dans l’industrie"
+      },
+      {
+        "value": "2",
+        "label": "Plateformes d’entreprise : fintech & identity security"
+      },
+      {
+        "value": "0",
+        "label": "Défauts critiques lors du dernier lancement majeur"
+      }
+    ]
+  },
+  "skillGroups": [
+    {
+      "title": "Frontend",
+      "skills": [
+        "React.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5 & CSS",
+        "Material UI",
+        "Bootstrap",
+        "React Router"
+      ]
+    },
+    {
+      "title": "Testing & APIs",
+      "skills": [
+        "Jest",
+        "Unit Testing",
+        "REST APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "title": "Tools & Practices",
+      "skills": [
+        "Git & Bitbucket",
+        "Jira",
+        "Docker",
+        "Go",
+        "Claude AI",
+        "Team Leadership"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Mesh Identity Risk (Axiad)",
+      "coverLabel": "Mesh",
+      "coverNote": "Identity Risk SaaS",
+      "description": "Plateforme SaaS multi-tenant pour la gestion du risque d’identité en entreprise — dashboards de corrélation d’identités, de suivi d’actifs cryptographiques et d’évaluation des risques.",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "GraphQL"
+      ],
+      "gradient": "linear-gradient(135deg, #d9f0ee, #9fd8d2)",
+      "links": {}
+    },
+    {
+      "title": "Loan Origination System",
+      "coverLabel": "LOS",
+      "coverNote": "Plateforme Fintech",
+      "description": "Automatisation de bout en bout des prêts pour les institutions financières — écrans de saisie des demandes, vérification de documents, underwriting et workflows d’approbation.",
+      "tech": [
+        "React.js",
+        "TypeScript",
+        "Material UI"
+      ],
+      "gradient": "linear-gradient(135deg, #e3e9f7, #aebfe8)",
+      "links": {}
+    },
+    {
+      "title": "Sacunxt — Plugin ServiceNow",
+      "coverLabel": "Sacunxt",
+      "coverNote": "Plug-in ServiceNow",
+      "description": "Plugin ServiceNow tiers développé en JavaScript, étendant la plateforme pour des intégrations externes.",
+      "tech": [
+        "JavaScript",
+        "ServiceNow"
+      ],
+      "gradient": "linear-gradient(135deg, #fde8d7, #f6c39a)",
+      "links": {}
+    },
+    {
+      "title": "Ce portfolio",
+      "coverLabel": "RA.",
+      "coverNote": "React + Vite + CI",
+      "description": "Le site que vous regardez — un portfolio React component-driven, testé en CI et déployé automatiquement sur GitHub Pages.",
+      "tech": [
+        "React",
+        "Vite",
+        "GitHub Actions"
+      ],
+      "gradient": "linear-gradient(135deg, #e8f2e4, #b9d8ac)",
+      "links": {
+        "code": "https://github.com/rajatagrawal27/rajatagrawal27.github.io"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "company": "InfoBeans Technologies Ltd",
+      "period": "Juil. 2025 — Aujourd’hui",
+      "projects": [
+        "Mesh Identity Risk (Axiad) · équipe de 12"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "Juil. 2025 — Aujourd’hui",
+          "points": [
+            "Conception de components et containers React + TypeScript indépendants et réutilisables pour les dashboards de corrélation d’identités, de suivi d’actifs cryptographiques et d’évaluation des risques, sur une plateforme SaaS multi-tenant consommant des APIs REST et GraphQL.",
+            "Livraison du flux UI complet d’ingestion d’identités d’agents — 12 tests d’intégration, zéro défaut critique après déploiement — ainsi qu’une nouvelle page de dashboard des incidents.",
+            "Pilotage de l’alignement de l’architecture frontend sur 8 modules UI adossés à des microservices avant une release majeure, et résolution d’un bug critique d’intégrité des données en production."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Sigma Infosolutions Ltd",
+      "period": "Août 2019 — Juil. 2025",
+      "projects": [
+        "Loan Origination System (LOS) · fintech · équipe de 7"
+      ],
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "Nov. 2024 — Juil. 2025",
+          "points": [
+            "Architecture de la component library React + TypeScript indépendante au cœur de tout le frontend LOS, et définition des standards de test avec Jest.",
+            "Optimisation des performances de rendu pour le traitement de prêts à haut volume et accompagnement de l’équipe de 7 ingénieurs sur les patterns de components et les revues de code."
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "period": "Sept. 2021 — Nov. 2024",
+          "points": [
+            "Développement de components React + TypeScript réutilisables pour les écrans d’underwriting et de workflows d’approbation, stylisés avec Material UI.",
+            "Mise en place du client-side routing et de modules frontend conteneurisés avec React Router, permettant aux équipes métier d’ajuster les workflows d’approbation sans modifier le backend.",
+            "Intégration de vues de données basées sur des graphes pour la détection de fraude et la corrélation des risques entre demandes."
+          ]
+        },
+        {
+          "title": "Associate Software Engineer",
+          "period": "Août 2019 — Août 2021",
+          "points": [
+            "Création d’écrans UI responsives pour la saisie des demandes et la vérification de documents en React.js, HTML5, CSS et Bootstrap.",
+            "Rédaction de tests unitaires Jest pour les components partagés et correction de bugs UI sur la plateforme LOS."
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "Construisons quelque chose ensemble.",
+    "text": "Je suis ouvert aux postes frontend, aux projets intéressants et aux bonnes conversations — la fintech et l’identity security sont mon terrain de jeu. Le moyen le plus rapide de me joindre est l’email."
+  },
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rajatagrawal27"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rajat-agrawal-957255187"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:agrawalrajat27@gmail.com"
+    }
+  ]
+}

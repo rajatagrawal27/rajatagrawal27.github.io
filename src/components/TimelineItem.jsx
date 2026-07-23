@@ -1,13 +1,13 @@
 import SkillBadge from './SkillBadge'
 
-export default function TimelineItem({ company, period, roles, projects }) {
+export default function TimelineItem({ company, period, roles, projects, projectsLabel = 'Projects' }) {
   return (
     <li className="timeline-item">
       <span className="timeline-item__period">{period}</span>
       <h3 className="timeline-item__role">{company}</h3>
       {projects && projects.length > 0 && (
         <div className="timeline-item__projects">
-          <span className="timeline-item__projects-label">Projects</span>
+          <span className="timeline-item__projects-label">{projectsLabel}</span>
           <div className="badges">
             {projects.map((p) => (
               <SkillBadge key={p} label={p} />

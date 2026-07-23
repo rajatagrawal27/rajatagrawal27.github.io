@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import Button from '../components/Button'
 import useScrollReveal from '../hooks/useScrollReveal'
-import { profile } from '../data/content'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function Hero() {
   const ref = useScrollReveal()
   const [photoOk, setPhotoOk] = useState(true)
+  const { t } = useLanguage()
+  const { profile, ui } = t
+
   return (
     <section id="home" className="hero">
       <div className="container hero__inner reveal" ref={ref}>
@@ -18,8 +21,8 @@ export default function Hero() {
           </h1>
           <p className="hero__subtitle">{profile.heroSubtitle}</p>
           <div className="hero__actions">
-            <Button href="#projects">View Projects</Button>
-            <Button href={profile.cvUrl} variant="ghost">Download CV</Button>
+            <Button href="#projects">{ui.viewProjects}</Button>
+            <Button href={profile.cvUrl} variant="ghost">{ui.downloadCv}</Button>
           </div>
         </div>
         {profile.photo && photoOk ? (

@@ -8,6 +8,9 @@ design tokens, tested with **Vitest + React Testing Library**, and deployed
 
 ## ✨ Features
 
+- **6 languages** — 🇬🇧 English (default), 🇫🇷 French, 🇮🇳 Hindi, 🇩🇪 German,
+  🇨🇳 Chinese, 🇯🇵 Japanese. Flag dropdown in the navbar; the choice is
+  remembered (localStorage). Tech terms stay in English in every language.
 - **Light & dark mode** — ☾/☀ toggle in the navbar; the choice is remembered
   between visits (localStorage), with smooth color transitions
 - **Scroll mini-profile** — after scrolling past the hero, the sticky navbar
@@ -40,8 +43,11 @@ portfolio/
     ├── main.jsx                # React entry point
     ├── App.jsx                 # assembles all sections
     ├── App.test.jsx            # smoke test: all sections render
-    ├── data/
-    │   └── content.js          # ⭐ ALL site text lives here — edit this file
+    ├── context/
+    │   └── LanguageContext.jsx # language state + list of available languages
+    ├── data/translations/
+    │   ├── en.json             # ⭐ ALL site text — English is the master copy
+    │   └── fr.json, hi.json, de.json, zh.json, ja.json
     ├── components/             # independent, reusable, props-only components
     │   ├── Button.jsx, SectionHeading.jsx, SkillBadge.jsx,
     │   ├── NavPill.jsx, ProjectCard.jsx, TimelineItem.jsx,
@@ -90,9 +96,16 @@ npm run preview
 
 ## ✏️ Editing the site content
 
-**Everything** — name, bio, skills, projects, experience, links — lives in one file:
+**Everything** — name, bio, skills, projects, experience, links — lives in the
+translation files:
 
-> [`src/data/content.js`](src/data/content.js)
+> [`src/data/translations/en.json`](src/data/translations/en.json) — the master copy
+
+⚠️ When you change text in `en.json`, mirror the change in the other five
+files (`fr.json`, `hi.json`, `de.json`, `zh.json`, `ja.json`) — same structure,
+translated values. Non-text fields (links, gradients, tech lists, photo paths)
+must stay identical in every file. Adding a language = add a JSON file + one
+entry in [`src/context/LanguageContext.jsx`](src/context/LanguageContext.jsx).
 
 Common edits:
 
@@ -101,7 +114,8 @@ Common edits:
   `gradient` (the cover colors)
 - **Profile photo** — replace `public/profile.jpg` (used in hero + navbar)
 - **Resume** — still PLACEHOLDER: add `public/resume.pdf` and set
-  `cvUrl: '/resume.pdf'` to make the "Download CV" button work
+  `profile.cvUrl` to `/resume.pdf` (in all six JSON files) to make the
+  "Download CV" button work
 - **Colors / theme** — design tokens at the top of
   [`src/styles/global.css`](src/styles/global.css): `:root` for light mode,
   `:root[data-theme="dark"]` for dark mode

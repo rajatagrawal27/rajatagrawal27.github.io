@@ -2,6 +2,19 @@
 
 Everything that changed on the site, newest first.
 
+## 2026-07-23 (evening)
+
+**Multi-language support (6 languages):**
+
+- Flag dropdown in the navbar: 🇬🇧 EN (default) · 🇫🇷 FR · 🇮🇳 हिंदी · 🇩🇪 DE ·
+  🇨🇳 中文 · 🇯🇵 日本語 — choice persists (localStorage), `<html lang>` updates
+- All site text moved to `src/data/translations/*.json` (one file per
+  language, same structure; English is the master copy)
+- Tech terms (React.js, component library, SaaS, …), names, and job titles
+  stay in English in every language
+- ⚠️ The non-English translations were AI-drafted — a native-speaker review
+  is recommended before sharing the site with speakers of those languages
+
 ## 2026-07-23
 
 **Experience section restructured by company:**

@@ -1,6 +1,16 @@
 import SkillBadge from './SkillBadge'
 
-export default function ProjectCard({ title, description, tech, gradient, links, coverLabel, coverNote }) {
+export default function ProjectCard({
+  title,
+  description,
+  tech,
+  gradient,
+  links,
+  coverLabel,
+  coverNote,
+  liveDemoLabel = 'Live demo →',
+  sourceCodeLabel = 'Source code →',
+}) {
   return (
     <article className="project-card">
       <div className="project-card__cover" style={{ background: gradient }} aria-hidden="true">
@@ -16,10 +26,10 @@ export default function ProjectCard({ title, description, tech, gradient, links,
       </div>
       <div className="project-card__links">
         {links.demo && (
-          <a href={links.demo} target="_blank" rel="noopener noreferrer">Live demo →</a>
+          <a href={links.demo} target="_blank" rel="noopener noreferrer">{liveDemoLabel}</a>
         )}
         {links.code && (
-          <a href={links.code} target="_blank" rel="noopener noreferrer">Source code →</a>
+          <a href={links.code} target="_blank" rel="noopener noreferrer">{sourceCodeLabel}</a>
         )}
       </div>
     </article>
