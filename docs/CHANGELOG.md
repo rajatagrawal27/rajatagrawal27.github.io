@@ -12,6 +12,10 @@ Everything that changed on the site, newest first.
   Software Engineer → Senior Software Engineer at Sigma; Senior Software
   Engineer at InfoBeans
 - Projects listed inside each company as pills (Mesh Identity Risk / LOS)
+- Each role carries its own achievement bullets, growing in responsibility
+  from ASE (UI screens, unit tests) → SE (reusable components, routing,
+  graph views) → SSE (component library architecture, performance, guiding
+  the team)
 
 **New features (live):**
 
