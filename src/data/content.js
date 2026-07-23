@@ -120,11 +120,11 @@ export const experience = [
     projects: ['Loan Origination System (LOS) · fintech · team of 7'],
     roles: [
       {
-        title: 'Associate Software Engineer',
-        period: 'Aug 2019 — Aug 2021',
+        title: 'Senior Software Engineer',
+        period: 'Nov 2024 — Jul 2025',
         points: [
-          'Built responsive UI screens for application intake and document verification in React.js, HTML5, CSS, and Bootstrap.',
-          'Wrote Jest unit tests for shared components and fixed UI bugs across the LOS platform.',
+          'Architected the independent React + TypeScript component library powering the entire LOS frontend, and set the testing standards with Jest.',
+          'Optimized rendering performance for high-volume loan processing and guided the 7-engineer team on component patterns and reviews.',
         ],
       },
       {
@@ -137,11 +137,11 @@ export const experience = [
         ],
       },
       {
-        title: 'Senior Software Engineer',
-        period: 'Nov 2024 — Jul 2025',
+        title: 'Associate Software Engineer',
+        period: 'Aug 2019 — Aug 2021',
         points: [
-          'Architected the independent React + TypeScript component library powering the entire LOS frontend, and set the testing standards with Jest.',
-          'Optimized rendering performance for high-volume loan processing and guided the 7-engineer team on component patterns and reviews.',
+          'Built responsive UI screens for application intake and document verification in React.js, HTML5, CSS, and Bootstrap.',
+          'Wrote Jest unit tests for shared components and fixed UI bugs across the LOS platform.',
         ],
       },
     ],
